@@ -291,81 +291,6 @@
 
 
 
-
-
-      <!-- 
-        - #ABOUT
-      -->
-
-      <section class="section about" id="about" aria-label="about">
-        <div class="container">
-
-          <figure class="about-banner">
-
-            <div class="img-holder" style="--width: 520; --height: 370;">
-              <img src="./assets/images/about-banner.jpg" width="520" height="370" loading="lazy" alt="about banner"
-                class="img-cover">
-            </div>
-
-            <img src="./assets/images/about-shape-1.svg" width="360" height="420" loading="lazy" alt=""
-              class="shape about-shape-1">
-
-            <img src="./assets/images/about-shape-2.svg" width="371" height="220" loading="lazy" alt=""
-              class="shape about-shape-2">
-
-            <img src="./assets/images/about-shape-3.png" width="722" height="528" loading="lazy" alt=""
-              class="shape about-shape-3">
-
-          </figure>
-
-          <div class="about-content">
-
-            <p class="section-subtitle">About Us</p>
-
-            <h2 class="h2 section-title">
-              Over 10 Years in <span class="span">Distant learning</span> for Skill Development
-            </h2>
-
-            <p class="section-text">
-              Lorem ipsum dolor sit amet consectur adipiscing elit sed eiusmod ex tempor incididunt labore dolore magna
-              aliquaenim ad
-              minim.
-            </p>
-
-            <ul class="about-list">
-
-              <li class="about-item">
-                <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
-
-                <span class="span">Expert Trainers</span>
-              </li>
-
-              <li class="about-item">
-                <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
-
-                <span class="span">Online Remote Learning</span>
-              </li>
-
-              <li class="about-item">
-                <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
-
-                <span class="span">Lifetime Access</span>
-              </li>
-
-            </ul>
-
-            <img src="./assets/images/about-shape-4.svg" width="100" height="100" loading="lazy" alt=""
-              class="shape about-shape-4">
-
-          </div>
-
-        </div>
-      </section>
-
-
-
-
-
       <!-- 
         - #COURSE
       -->
@@ -390,7 +315,7 @@
                 <div class="abs-badge">
                   <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
 
-                  <span class="span">3 Weeks</span>
+                  <span class="span">6 Weeks</span>
                 </div>
 
                 <div class="card-content">
@@ -449,7 +374,7 @@
                 <div class="abs-badge">
                   <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
 
-                  <span class="span">8 Weeks</span>
+                  <span class="span">18 Weeks</span>
                 </div>
 
                 <div class="card-content">
@@ -508,7 +433,7 @@
                 <div class="abs-badge">
                   <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
 
-                  <span class="span">4 Weeks</span>
+                  <span class="span">15 Weeks</span>
                 </div>
 
                 <div class="card-content">
@@ -571,35 +496,43 @@
 
 
 
-      <!-- 
-        - #VIDEO
-      -->
+     <!-- 
+- #VIDEO
+-->
 
-      <section class="video has-bg-image" aria-label="video"
-        style="background-image: url('./assets/images/video-bg.png')">
-        <div class="container">
+<section class="video has-bg-image" aria-label="video"
+style="background-image: url('./assets/images/video-bg.png')">
+<div class="container">
 
-          <div class="video-card">
+  <div class="video-card">
 
-            <div class="video-banner img-holder has-after" style="--width: ; --height: ;">
-              <img  src="./assets/images/video-banner.jpg" width="970" height="550" loading="lazy" alt="video banner"
-                class="img-cover">
+    <div class="video-banner img-holder has-after" style="--width: ; --height: ;">
+      <img src="./assets/images/video-banner.jpg" width="970" height="550" loading="lazy" alt="video banner"
+        class="img-cover">
 
-              <button class="play-btn" aria-label="play video">
-                <ion-icon name="play" aria-hidden="true"></ion-icon>
-              </button>
-            </div>
+      <div class="iframe-container" style="display: none;">
+        <iframe id="video-iframe" width="970" height="550" src="https://www.youtube.com/embed/0trTO3lg1Ko" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
 
-            <img src="./assets/images/video-shape-1.png" width="1089" height="605" loading="lazy" alt=""
-              class="shape video-shape-1">
+      <button class="play-btn" aria-label="play video" onclick="playVideo()">
+        <ion-icon name="play" aria-hidden="true"></ion-icon>
+      </button>
+    </div>
 
-            <img src="./assets/images/video-shape-2.png" width="158" height="174" loading="lazy" alt=""
-              class="shape video-shape-2">
+    <img src="./assets/images/video-shape-1.png" width="1089" height="605" loading="lazy" alt=""
+      class="shape video-shape-1">
 
-          </div>
+    <img src="./assets/images/video-shape-2.png" width="158" height="174" loading="lazy" alt=""
+      class="shape video-shape-2">
 
-        </div>
-      </section>
+  </div>
+
+</div>
+</section>
+
+
+
+
 
 
 
@@ -816,7 +749,75 @@
   </main>
 
 
+ 
+  <!-- 
+        - #ABOUT
+      -->
 
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+
+          <figure class="about-banner">
+
+            <div class="img-holder" style="--width: 520; --height: 370;">
+              <img src="./assets/images/about-banner.jpg" width="520" height="370" loading="lazy" alt="about banner"
+                class="img-cover">
+            </div>
+
+            <img src="./assets/images/about-shape-1.svg" width="360" height="420" loading="lazy" alt=""
+              class="shape about-shape-1">
+
+            <img src="./assets/images/about-shape-2.svg" width="371" height="220" loading="lazy" alt=""
+              class="shape about-shape-2">
+
+            <img src="./assets/images/about-shape-3.png" width="722" height="528" loading="lazy" alt=""
+              class="shape about-shape-3">
+
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">About Us</p>
+
+            <h2 class="h2 section-title">
+              Over 10 Years in <span class="span">Distant learning</span> for Skill Development
+            </h2>
+
+            <p class="section-text">
+              Lorem ipsum dolor sit amet consectur adipiscing elit sed eiusmod ex tempor incididunt labore dolore magna
+              aliquaenim ad
+              minim.
+            </p>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+                <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
+
+                <span class="span">Expert Trainers</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
+
+                <span class="span">Online Remote Learning</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
+
+                <span class="span">Lifetime Access</span>
+              </li>
+
+            </ul>
+
+            <img src="./assets/images/about-shape-4.svg" width="100" height="100" loading="lazy" alt=""
+              class="shape about-shape-4">
+
+          </div>
+
+        </div>
+      </section>
 
 
   <!-- 
